@@ -21,8 +21,8 @@
                     position: relative;
                     height: 200px;
                     width: 200px;
-                    left:50%;
-                    font-size: 5;
+                    left:40%;
+                    font-size: 30;
                }
           </style>
      </head>
@@ -40,7 +40,11 @@
                     if (count>=5 & count<10) button.style.backgroundColor = "red";
                     else if (count>=10) button.style.backgroundColor = "blue";
                }
+               var onHover = function() {
+                    button.style.border = "3px solid black";
+               }
                button.addEventListener("click",onClick);
+               button.addEventListener("mouseover",onHover);
           </script>
      </body>
 </html>
