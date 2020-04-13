@@ -37,8 +37,12 @@
                var onHover = function() {
                     button.style.border = "3px solid black";
                }
+               var offHover = function() {
+                    button.style.border = "0px";
+               }
                button.addEventListener("click",onClick);
                button.addEventListener("mouseover",onHover);
+               button.addEventListener("mouseleave",offHover);
           </script>
      </body>
 </html>
