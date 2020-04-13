@@ -1,12 +1,27 @@
 <html>
      <head>
           <meta charset = "utf-8">
-          <title>Javascript</title>
+          <title>Testing Javascript</title>
           <style>
+               #topRect {
+                    height: 200px;
+                    width: 100%;
+                    background-color: rgb(80, 231, 181);
+               }
+               #title {
+                    font-size: 7;
+                    font-family: 'Courier New', Courier, monospace;
+                    background-color: black;
+               }
+               #button {
+                    height: 20px;
+                    width: 20px;
+               }
           </style>
      </head>
      <body>
-          <h1>Testing JS</h1>
+          <div id="topRect"></div>
+          <h1 id="title">Testing Javascript</h1>
           <button id="button">Button</button>
           <script>
                var count = 0;
@@ -14,8 +29,8 @@
                var onClick = function() {
                     count++;
                     button.textContent = "Clicked " + count + " time" + (count>0 ? "s" : "");
-                    if (count>=5 & count<10) button.setAttribute("style","background-color: red;");
-                    else if (count>=10) button.setAttribute("style","background-color: blue;");
+                    if (count>=5 & count<10) button.style.backgroundColor = "red";
+                    else if (count>=10) button.style.backgroundColor = "blue";
                }
                button.addEventListener("click",onClick);
           </script>
