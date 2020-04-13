@@ -4,14 +4,17 @@
           <title>Testing Javascript</title>
           <style>
                #topRect {
-                    height: 200px;
+                    height: 400px;
                     width: 100%;
                     background-color: rgb(80, 231, 181);
+                    text-align: center;
+                    margin: 0px 0px 0px 0px;
                }
                #title {
                     font-size: 7;
                     font-family: 'Courier New', Courier, monospace;
                     background-color: black;
+                    z-index: 1;
                }
                #button {
                     height: 20px;
@@ -20,8 +23,9 @@
           </style>
      </head>
      <body>
-          <div id="topRect"></div>
-          <h1 id="title">Testing Javascript</h1>
+          <div id="topRect">
+               <h1 id="title">Testing Javascript</h1>
+          </div>
           <button id="button">Button</button>
           <script>
                var count = 0;
