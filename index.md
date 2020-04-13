@@ -1,6 +1,9 @@
 <html>
      <head>
           <meta charset = "utf-8">
+          <title>Javascript</title>
+          <style>
+          </style>
      </head>
      <body>
           <h1>Testing JS</h1>
